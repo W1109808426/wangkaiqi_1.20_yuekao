@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/dp_10"
+    tools:context=".TwoActivity">
+
+    <LinearLayout
+        android:id="@+id/l"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_60"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/dp_60"
+            android:layout_height="@dimen/dp_60"
+            android:src="@mipmap/ic_launcher"/>
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/ViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_200"
+        android:layout_below="@+id/l" />
+
+    <TextView
+        android:id="@+id/XName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ViewPager"
+        android:text="123"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:textColor="#181717"
+        android:textSize="@dimen/sp_13" />
+
+    <TextView
+        android:id="@+id/XNameT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/XName"
+        android:text="123"
+        android:layout_marginTop="@dimen/dp_5"
+        android:maxEms="13"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textColor="#e42626"
+        android:textSize="@dimen/sp_13" />
+
+
+    <TextView
+        android:id="@+id/XPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/XNameT"
+        android:text="4895"
+        android:layout_marginTop="@dimen/dp_5"
+        android:textColor="#fa0a0a"
+        android:textSize="@dimen/sp_15" />
+
+    <Button
+        android:id="@+id/j"
+        android:layout_width="@dimen/dp_60"
+        android:layout_height="@dimen/dp_25"
+        android:layout_alignBottom="@+id/XPrice"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/dp_10"
+        android:background="@drawable/bt"
+        android:padding="@dimen/dp_5"
+        android:text="降价通知"
+        android:textColor="#999"
+        android:textSize="@dimen/sp_11" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_270"
+            android:background="#ea0606"
+            android:text="加入购物车"
+            android:textColor="#fff"
+            android:textSize="@dimen/sp_14" />
+    </LinearLayout>
+</RelativeLayout>
